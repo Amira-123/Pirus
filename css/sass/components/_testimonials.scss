@@ -1,0 +1,48 @@
+#testimonials{
+    background-color: $secondBg;
+    padding-bottom: 100px;
+    .section-content{
+        background-color: $mainBg;
+        border: 1px solid $sectionBorder;
+        .icon{
+            font-size: 50px;
+            color: #2C6463
+        }
+        .star-icon{
+           color: #FEC42D;
+           
+        }
+        .carousel-image{
+            width: 70px;
+            height: 70px;
+            margin-bottom: -3rem !important;
+            
+            img{
+                width: 100%;
+                border-radius: 50%;
+                object-fit: cover;
+               
+            }
+        }
+    }
+    .after-section{
+        h5{
+            font-weight: 700;
+            font-size: 20px;
+          
+        }
+    }
+    .testimonials-image{
+        img{
+            width: 30%;
+            transition: all .5s;
+            &:hover{
+                transform: scale(1.2);
+            }
+        }
+    }
+    position: relative;
+        &::after{
+            @extend .commonSection;
+    }
+}

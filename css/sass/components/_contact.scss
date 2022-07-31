@@ -1,0 +1,19 @@
+#contact{
+    background-color:$mainBg ;
+    h4{
+        color: $textColor;
+        @extend .logoStyle;
+        text-transform: uppercase;
+        
+    }
+    h5{
+        color: $textColor;
+        font-size:1rem;
+    }
+    p{
+        color: $textColor;
+        font-weight: 500;
+        font-size: .8rem;
+        letter-spacing: .5px;
+    }
+}

@@ -1,0 +1,43 @@
+#work{
+    background-color: $secondBg;
+    padding-bottom: 100px;
+    .work-images{
+        .image{
+            width:16.66%;
+            overflow: hidden;
+            position: relative;
+            transition: all .5s;
+            .layer{
+                position: absolute;
+                top: 80%;
+                bottom: -100%;
+                width: 100%;
+                height: 100;
+                opacity: 0;
+                background-color: rgba($color: #000000, $alpha:.4);
+                transition: all .5s;
+                
+            }
+            &:hover{
+                width:30%;
+                .layer{
+                opacity: .8;
+                top: 50%;
+                bottom: 0;
+                }
+            }
+            img{
+               height: 400px;
+               &:hover{
+                   transform: scale(1.1) ;
+                }
+            }
+        }
+        
+       
+    }
+    position: relative;
+        &::after{
+            @extend .commonSection;
+    }
+}

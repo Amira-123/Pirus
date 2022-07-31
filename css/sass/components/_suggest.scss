@@ -1,0 +1,21 @@
+#suggest{
+    background-image: url(../images/suggest.jpg);
+    background-size:100% 100%;
+   background-position: 100% ;
+   background-attachment: fixed;
+   height: 95vh;
+   .icon{
+     border: 2px solid $borderColor;
+     width: 40px;
+     height: 40px;
+     border-radius: 50%;
+     
+   }
+   button{
+    @include btnStyle;
+    transition: .1s all;
+    &:hover{
+        border-color: $hoverColor;
+    }
+}
+}

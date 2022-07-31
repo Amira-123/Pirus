@@ -1,0 +1,59 @@
+.home{
+    background-image: url(../images/bg1.jpg);
+    background-size:100% 100% ;
+    background-position: 100% ;
+   
+    .home-content{
+        padding-top: 4rem;
+        height: 80vh;
+        h1{
+            color: $textColor;
+            font-size: 60px;
+            font-weight: 700;
+            line-height: 1.2;
+            letter-spacing: .5px;
+            font-family: $global-font-family
+        }
+        button{
+            @include btnStyle;
+           
+            transition: .1s all;
+            &:hover{
+                border-color: $hoverColor;
+            }
+        }
+    }
+  ////////////second part
+    .second-content{
+        
+        .content{
+            background-color: $secondBg;
+            padding: 40px 0px 40px 40px;
+            &:hover{
+                
+                @extend .borderStyle
+            }
+            .icon{
+                color: aqua ;
+                font-size: 20px;
+            }
+            h4{
+                @extend .header-second-title;
+                position: relative;
+                 &::after{
+                   @include general-line ;
+                    height: 2px;
+                    width: 70px;
+                    bottom:-100%;
+                    left: 0px;
+                }
+            }
+        }
+        
+    
+        
+    }
+   
+   
+
+}

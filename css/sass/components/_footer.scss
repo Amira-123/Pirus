@@ -1,0 +1,19 @@
+footer{
+    background-color: $mainBg;
+    border-top:1px solid $sectionBorder; 
+    h6{
+        
+        font-size: .8rem;
+    }
+    p{
+        font-size: .8rem;
+    }
+    i{
+        font-size: 1.3rem;
+        color: $textColor;
+        &:hover{
+            color: $borderColor;
+        }
+    }
+   
+}

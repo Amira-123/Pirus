@@ -1,0 +1,110 @@
+@mixin linkStyle{
+    margin: 5px 0;
+    padding: 5px 15px;
+}
+@mixin btnStyle{
+    text-transform: uppercase;
+    color: $textColor;
+    border: 2px solid $borderColor;
+    background-color: transparent;
+    padding: 15px 20px;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: .8px;
+}
+@mixin general-line {
+    content: '';
+    background-color: aqua;
+    position: absolute;
+}
+@mixin imageHover {
+    top:0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba($color:#0d0d0e, $alpha: .3);
+    position: absolute;
+}
+////////////responsive
+// navbar style
+@mixin navbarstyle {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255,.8)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+//////////////general classes
+// navbar classes
+.link-style{
+    color:$textColor;
+    font-weight: 700;
+    font-family: $global-font-family;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+}
+.section-title{
+    font-family: $text-font-family;
+    font-weight: 600;
+    color: $textColor;
+    font-size: 2rem;
+    letter-spacing: .5px;
+    line-height: 1;
+    padding-left: 80px;
+   
+}
+.line-section{
+    position: relative;
+}
+.line-section::before{
+    content: '';
+    position: absolute;
+    width: 70px;
+    height: 3px;
+    background-color:$borderColor;
+    left: 0px;
+    top:50%
+}
+.global-section-text{
+    // font-size: .8rem;
+        color: $borderColor;
+        line-height:1;
+        letter-spacing: .3px;
+        font-family: $global-font-family
+   
+}
+.header-second-title{
+    color: $textColor;
+   font-size: 20px;
+    font-weight: 600;
+    letter-spacing: .5px;
+    font-family:$global-font-family;
+   
+}
+.second-section-paragraph{
+    letter-spacing: .5px;
+    line-height: 1.4;
+    font-family: $text-font-family;
+    color:$textColor
+}
+.borderStyle{
+    outline: 3px solid $borderColor;
+    outline-offset: -3px;
+    
+}
+.style-span{
+    text-decoration:line-through solid $borderColor 3px;
+}
+.logoStyle{
+    font-size: 25px;
+    font-weight: 700;
+    font-family: $global-font-family;
+}
+.commonSection{
+    content: '';
+    position: absolute;
+    background-color: $borderColor;
+    width: 3px;
+    height: 50px;
+    left: 50%;
+    bottom:3rem; 
+}

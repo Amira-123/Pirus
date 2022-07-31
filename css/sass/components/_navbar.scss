@@ -1,0 +1,48 @@
+.navbar-light {
+  background-color:#000;
+  padding-top:.8rem ;
+  .navbar-nav{
+    .nav-link{
+          @extend .link-style;
+          font-size: 14px;
+          &:hover{
+            color: #A0A0A0; 
+          }
+    }
+    .nav-link.active{
+      color: #A0A0A0 !important;
+      text-transform: uppercase;
+    }
+  }
+  .navbar-brand{
+    color: $textColor !important;
+    @extend .logoStyle;
+  }
+  li{
+    @include linkStyle;
+    
+    
+  }
+  
+} 
+.nav-item{
+  border-bottom: 3px solid transparent;
+  transition: all 1s;
+  &:hover{
+    border-bottom-color: $borderColor;
+  }
+
+}
+.special-link{
+  border-bottom: 3px solid $borderColor;
+}
+  .contact-link{
+    border: 2px solid $borderColor;
+    transition: .2s all;
+    &:hover{
+          border-color: $hoverColor;
+    }
+   
+   }
+  
+  
